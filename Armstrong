@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+ {
+ 	int number,check=0,check1=0,result=0;
+ 	printf("enter the number to check armstrong ");
+ 	scanf("%d",&number);
+    check=number;	
+    while(check!=0)
+     { 
+       check1=check%10;
+       result= result+(check1*check1*check1);
+       check=check/10;
+     }
+     printf("\nresult is %d ",result);
+     if(number==result)
+      printf("\nnumber is armstrong");
+    else
+      printf("\nnumber is not armstrong");
+     return 0;
+ } 
